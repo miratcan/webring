@@ -1,0 +1,17 @@
+<html>
+  <body>
+    <script>
+      // https://webring.github.io/?ref=miratcan.github.io&path=/miratcan/trdev/sites.json&action=next
+      const qs = window.location.search;
+      const params = new URLSearchParams(qs);
+      const ref = params.get('ref');
+      const path = params.get('path');
+      const action = params.get('action')
+      const url = new URL(path, 'http://githubusercontent.com/').href;
+      const resp = fetch(url).then(r => {
+        let json = await r.json();
+        console.log(json)
+      });
+    </script>
+  </body>
+</html>

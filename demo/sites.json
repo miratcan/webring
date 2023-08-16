@@ -1,0 +1,11 @@
+{
+  "language": "TR-tr",
+  "title": "TEST",
+  "description": "TEST",
+  "criteria": "TEST",
+  "homepage": "foo",
+  "sites": [{
+    "title": "Mirat Can Bayrak",
+    "url": "https://miratcan.github.io/"
+  }]
+}
